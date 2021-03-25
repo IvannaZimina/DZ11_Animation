@@ -1,0 +1,216 @@
+::before::after {
+    box-sizing: border-box;
+}
+
+.test1 {
+    border: 1px solid black;
+    width: 1000px;
+    height: 300px;
+    position: relative;
+
+    @keyframes ballLeft {
+        0% {
+            left: 0;
+        }
+        5% {
+            left: 70px;
+        }
+        10% {
+            left: 170px;
+        }
+        15% {
+            left: 270px;
+        }
+        20% {
+            left: 370px;
+        }
+        25% {
+            left: 470px;
+        }
+        30% {
+            left: 570px;
+        }
+        35% {
+            left: 670px;
+        }
+        40% {
+            left: 770px;
+        }
+        45% {
+            left: 870px;
+        }
+        50% {
+            left: 770px;
+        }
+        55% {
+            left: 670px;
+        }
+        60% {
+            left: 570px;
+        }
+        65% {
+            left: 470px;
+        }
+        70% {
+            left: 370px;
+        }
+        75% {
+            left: 270px;
+        }
+        80% {
+            left: 170px;
+        }
+        85% {
+            left: 100px;
+        }
+        90% {
+            left: 75px;
+        }
+        95% {
+            left: 50px;
+        }
+        100% {
+            left: 0;
+        }
+
+    }
+
+    @keyframes ballBottom {
+        0% {
+            bottom: 0;
+        }
+        5% {
+            bottom: 125px;
+        }
+        10% {
+            bottom: 75px;
+        }
+        15% {
+            bottom: 150px;
+        }
+        20% {
+            bottom: 100px;
+        }
+        25% {
+            bottom: 175px;
+        }
+        30% {
+            bottom: 125px;
+        }
+        35% {
+            bottom: 200px;
+        }
+        40% {
+            bottom: 150px;
+        }
+        45% {
+            bottom: 200px;
+        }
+        50% {
+            bottom: 150px;
+        }
+        55% {
+            bottom: 200px;
+        }
+        60% {
+            bottom: 150px;
+        }
+        65% {
+            bottom: 200px;
+        }
+        70% {
+            bottom: 150px;
+        }
+        75% {
+            bottom: 200px;
+        }
+        80% {
+            bottom: 150px;
+        }
+        85% {
+            bottom: 175px;
+        }
+        90% {
+            bottom: 125px;
+        }
+        95% {
+            bottom: 75px;
+        }
+        100% {
+            bottom: 0;
+        }
+    }
+
+
+    .ball {
+        width: 30px;
+        height: 30px;
+        background-color: pink;
+        border-radius: 100%;
+        animation: ballLeft 15s linear infinite, ballBottom 15s linear infinite;
+        position: absolute;
+    }
+
+    .blocks {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: relative;
+
+
+        @keyframes bloksOne {
+            65% {
+                height: 150px;
+            }
+            100% {
+                height: 75px;
+            }
+        }
+        @keyframes bloksTwo {
+            40% {
+                height: 150px;
+            }
+            90% {
+                height: 75px;
+            }
+        }
+        @keyframes bloksThree {
+            20% {
+                height: 150px;
+            }
+            80% {
+                height: 75px;
+            }
+        }
+
+        div {
+        background-color: rgb(180, 50, 72);
+        width: 100px;
+        }
+
+        .RectOne {
+            height: 75px;
+            animation: bloksOne 16s infinite;
+            animation-delay: 2s;
+    
+        }
+        .RectTwo {
+            height: 100px;
+            animation: bloksTwo 16s linear infinite;
+            animation-delay: 3s;
+
+        }
+        .RectThree {
+            height: 125px;
+            animation: bloksThree 16s linear infinite;
+            animation-delay: 5s;
+
+        }
+        .RectFour {
+            height: 150px;
+        }
+    }
+}
