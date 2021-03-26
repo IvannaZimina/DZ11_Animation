@@ -165,7 +165,7 @@
             65% {
                 height: 150px;
             }
-            100% {
+            90% {
                 height: 75px;
             }
         }
@@ -174,7 +174,10 @@
                 height: 150px;
             }
             90% {
-                height: 75px;
+                height: 100px;
+            }
+            100% {
+                height: 100px;
             }
         }
         @keyframes bloksThree {
@@ -182,7 +185,10 @@
                 height: 150px;
             }
             80% {
-                height: 75px;
+                height: 125px;
+            }
+            100% {
+                height: 125px;
             }
         }
 
